@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Services</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container" id="home">
+        <div class="header">
+            <h2>Mark Laptop and Printing Services</h2>
+            <p>One-Stop Solution for Your Digital Needs</p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+            </ul>
+        </div>
+
+
+        <center>
+            <div class="products">
+                <div class="card">
+                    <img src="1.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Computer Repair and upgrades</b></h4>
+                        <p>From hardware upgrades to software troubleshooting, our certified technicians ensure your
+                            devices run
+                            smoothly.</p>
+                        <p>Enhance the performance of your laptops with our upgrade services, including RAM, storage,
+                            and operating system upgrades.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="4.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Virus Removal & Security Checks</b></h4>
+                        <p>Protect your valuable data with our comprehensive virus removal and security solutions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="3.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Fast & Reliable Repairs</b></h4>
+                        <p> Whether it's a cracked screen, hardware malfunction, or software issue, our technicians can
+                            diagnose and fix it in no time.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="2.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Software Installation</b></h4>
+                        <p>We'll handle the entire installation process, ensuring that the software is correctly
+                            installed and configured according to your specifications..</p>
+                    </div>
+                </div>
+        </center>
+        <div class="abouts">
+            <h2 style="text-align: center;">Why Choose Us?</h2>
+            <p>
+
+                <b>Expertise:</b><br> With years of experience in the industry, our team possesses the knowledge and
+                skills to
+                deliver exceptional results. <br>
+                <b>Quality:</b><br> We use the latest technology and premium materials to ensure the highest standards
+                in every
+                service we offer. <br>
+                <b>Customer Satisfaction:</b><br> Your satisfaction is our priority. We strive to exceed your
+                expectations with
+                prompt, reliable service.
+
+
+            </p>
+            <div class="contact">
+            <h2>Special Offer:</h2>
+            <p>Get 20% off your first software installation service! Mention this flyer to redeem.</p>
+            <h2>Contact Information</h2>
+            <p>Ready to simplify your software installation process? Contact us today to schedule your service!</p>
+            <li>Phone No: 09123456789</li>
+            <li>Email: <a href="#">MarkGwapo@gmail.com</a></li>
+            <li>Facebook: <a href="https://web.facebook.com/photo/?fbid=1244695546241095&set=a.102693277108000&__tn__=%3C">Mark Calimpos</a></li>
+        </div>
+        </div>
+        
+    </div>
+    <div class="footer" id="footer">
+        <h3>Contact Us:</h3>
+        <div class="content">
+          <p>Facebook:</p>
+          <a style="color: white;"
+            href="https://web.facebook.com/photo/?fbid=1244695546241095&set=a.102693277108000&__tn__=%3C">Mark Calimpos
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollLinks = document.querySelectorAll('[href^="#"]');
+
+            scrollLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    var targetId = this.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

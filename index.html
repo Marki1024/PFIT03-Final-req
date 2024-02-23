@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Laptop and Printing Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container" id="home">
+    <div class="header">
+      <h2>Mark Laptop and Printing Services</h2>
+      <p>One-Stop Solution for Your Digital Needs</p>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#abouts">Abouts</a></li>
+        <li><a href="#footer">Contacts</a></li>
+      </ul>
+      <h1 class="title">Looking for reliable laptop repairs, upgrades, or printing solutions? Look no further!</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>Laptop Services</h2>
+          <li>Repair and upgrades</li><br>
+          <li>Virus Removal & Security Checks</li><br>
+          <li>Fast & Reliable Repairs</li><br>
+          <li>Software Installation</li>
+          <button onclick="document.location='laptop.html'">Check Out</button>
+
+        </div>
+        <div class="grid-item">
+          <h2>Printing Services</h2>
+          <li>High-Quality Printing</li><br>
+          <li>Binding & Laminating</li><br>
+          <li>Poster & Banner Printing</li><br>
+          <li>Custom Printing</li>
+          <button onclick="document.location='services.html'">Check Out</button>
+        </div>
+      </div>
+      <div class="abouts" id="abouts">
+        <h1>Why Choose Us?</h1>
+        <li><b>Expert Technicians</b></li><br>
+        <p>Our experienced team ensures the job is done right the first time.</p>
+        <li><b>Quick Turnaround</b></li><br>
+        <p> We understand the urgency; that's why we aim for speedy service without compromising quality.</p>
+        <li><b>Affordable Pricing</b></li><br>
+        <p>Quality service shouldn't break the bank. Our services are competitively priced.</p>
+        <li><b>Customer Satisfaction Guaranteed</b></li><br>
+        <p>Your satisfaction is our priority. We're not satisfied until you are.</p>
+      </div>
+      <div class="footer" id="footer">
+        <h3>Contact Us</h3>
+        <div class="content">
+          <p>Facebook:</p>
+          <a style="color: white;"
+            href="https://web.facebook.com/photo/?fbid=1244695546241095&set=a.102693277108000&__tn__=%3C">Mark Calimpos
+          </a>
+        </div>
+      </div>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var scrollLinks = document.querySelectorAll('[href^="#"]');
+
+          scrollLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              var targetId = this.getAttribute('href');
+              var targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                targetElement.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }
+            });
+          });
+        });
+      </script>
+</body>
+
+</html>
